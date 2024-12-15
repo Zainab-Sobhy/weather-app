@@ -1,0 +1,264 @@
+:root {
+    --basic-bg-color: #1e202b;
+    --basic-blue: #009AD8;
+    --card1-color: #323544;
+    --footer-color: #262936;
+    --base-font-color: #bfc1c8;
+    --base-font: "Roboto", sans-serif;
+}
+
+
+body {
+    background-color: var(--basic-bg-color);
+    font-family: var(--base-font);
+    color: var(--base-font-color);
+}
+
+/* -------Navbar-------- */
+.navbar {
+    padding-block: 50px;
+    background: var(--basic-bg-color);
+    color: #fff;
+}
+
+.navbar .navbar-nav {
+    color: #fff;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:focus {
+    color: #fff;
+}
+/* ----- */
+.navbar-collapse{
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--footer-color);
+    margin-block: 30px;
+    border-radius: 10px;
+}
+
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link:hover {
+    color: #fff;
+
+}
+.navbar-nav .nav-link.active{
+    color: var(--basic-blue);
+}
+.navbar-toggler{
+    border: transparent;
+}
+.navbar-toggler:focus{
+       
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) var(--basic-blue);
+        
+}
+
+.logo {
+    object-fit: contain;
+    width: 80px;
+}
+
+.nav-link {
+    transition: all 0.3s;
+    font-size: 14px;
+
+    padding-block: 20px;
+    border-bottom: 1px solid rgba(191, 193, 200,0.3);
+}
+
+small {
+    font-size: 10px;
+}
+
+.city-img {
+    height: 350px;
+    background-image: url("../imagee/banner.png");
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------- */
+
+
+.find-btn,
+.subscribe-btn {
+    right: 10px;
+    top: 5px;
+    padding: 10px 35px;
+    background-color: var(--basic-blue);
+    color: #fff;
+    border: none;
+}
+
+.search {
+    top: -260px;
+}
+
+.search-input {
+    caret-color: #fff;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: var(--basic-bg-color);
+}
+
+/* ---------------------------- */
+.row {
+    top: -200px;
+}
+
+.first {
+    background-color: var(--card1-color);
+}
+
+.first-card-deg {
+    font-size: 90px;
+}
+
+.second {
+    background-color: var(--footer-color);
+}
+
+.title1 {
+    background-color: #2d303d;
+}
+
+.title2 {
+    background-color: #222530;
+}
+
+.card {
+    color: inherit;
+    height: 450px;
+}
+
+.weather-mode {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--basic-blue);
+}
+
+/* -------------------------------- */
+footer {
+    background-color: var(--footer-color);
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.subscribe-btn {
+    top: 6px;
+    padding-inline: 20px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    transition: all 0.3s;
+}
+
+.social a:hover {
+    background-color: var(--basic-blue);
+    color: #fff;
+}
+
+
+/* ---------------------Contact Page------------------ */
+.pages {
+    background-color: var(--footer-color);
+}
+
+.pages a,
+.pages span,
+.pages i {
+    color: inherit;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.details {
+    background-color: var(--footer-color);
+}
+
+.inner p {
+    font-size: 14px;
+}
+
+.inner input,
+.inner textarea {
+    background-color: transparent;
+    border: 2px solid rgba(191, 193, 200, 0.3);
+    outline: none;
+    transition: all 0.3s;
+    caret-color: #fff;
+}
+
+.inner input:hover,
+.inner input:focus,
+.inner textarea:hover,
+.inner textarea:focus {
+    border-color: var(--basic-blue);
+}
+
+.inner input::placeholder,
+.inner textarea::placeholder {
+    font-size: 14px;
+}
+
+.inner .submit-btn {
+    background-color: var(--basic-blue);
+    border: none;
+}
+
+.inner i {
+    color: var(--basic-blue);
+
+}
+
+.inner a {
+    color: inherit;
+}
+
+@media(min-width:992px) {
+
+    .navbar-nav .nav-link {
+        border: 2px solid transparent;
+        padding: 3px 20px;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show,
+    .navbar-nav .nav-link:hover {
+        color: var(--basic-blue);
+        border-color: var(--basic-blue);
+    }
+    .navbar-collapse{
+        background-color:transparent;
+    }
+    .nav-link{
+        padding:0;
+        border-radius: 30px;
+    }
+
+
+
+}
